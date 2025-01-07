@@ -24,14 +24,18 @@ btns.forEach( (btn) => {
                   
             };
           
+
+           
             if (count < 0) {
                 value.style.color = 'red';
+                document.body.style.backgroundColor = 'yellow';
             }
             else if (count > 0) {
                 value.style.color = 'green';
             }
             else {
                   value.style.color = '#222';
+                  document.body.style.background = `white`;
             }
             // alert if the count % 5 is equal 0 and count is greater then 5
             if(count % 5 == 0 && count > 5) {
@@ -39,7 +43,7 @@ btns.forEach( (btn) => {
                 document.body.style.background = `blue`
                 value.style.color = 'white';
             } else {
-                 document.body.style.backgroundColor = 'yellow'
+                //  document.body.style.backgroundColor = 'yellow'
                 
             }
             value.textContent = count;
