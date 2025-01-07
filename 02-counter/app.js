@@ -36,6 +36,11 @@ btns.forEach( (btn) => {
             // alert if the count % 5 is equal 0 and count is greater then 5
             if(count % 5 == 0 && count > 5) {
                 alert(`The You have count up to: ${count}`)
+                document.body.style.background = `blue`
+                value.style.color = 'white';
+            } else {
+                 document.body.style.backgroundColor = 'yellow'
+                
             }
             value.textContent = count;
 
@@ -44,3 +49,4 @@ btns.forEach( (btn) => {
       
     
 });
+
